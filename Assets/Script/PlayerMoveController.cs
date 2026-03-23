@@ -9,8 +9,8 @@ public class PlayerController : MonoBehaviour
     [SerializeField] private Transform cameraTransform;
 
     [Header("Movement")]
-    [SerializeField] private float maxSpeed = 6f;
-    [SerializeField] private float acceleration = 20f;
+    [SerializeField] private float maxSpeed = 5f;
+    [SerializeField] private float acceleration = 80f;
     [SerializeField] private float deceleration = 25f;
 
     private Vector2 input;
