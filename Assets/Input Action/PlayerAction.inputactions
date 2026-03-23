@@ -2,7 +2,7 @@
     "name": "PlayerAction",
     "maps": [
         {
-            "name": "PlayerActcion",
+            "name": "PlayerActcions",
             "id": "5c654ffb-ca15-4f73-85a7-61d5f07aa608",
             "actions": [
                 {
@@ -13,13 +13,22 @@
                     "processors": "",
                     "interactions": "",
                     "initialStateCheck": true
+                },
+                {
+                    "name": "Dash",
+                    "type": "Value",
+                    "id": "3ce4d215-1ba3-465e-95e9-ce526e16de42",
+                    "expectedControlType": "Vector2",
+                    "processors": "",
+                    "interactions": "",
+                    "initialStateCheck": true
                 }
             ],
             "bindings": [
                 {
                     "name": "WASD",
                     "id": "088f4684-6f8f-4758-a889-ebb9b39f6bdd",
-                    "path": "3DVector",
+                    "path": "2DVector",
                     "interactions": "",
                     "processors": "",
                     "groups": "",
@@ -28,7 +37,7 @@
                     "isPartOfComposite": false
                 },
                 {
-                    "name": "up",
+                    "name": "Up",
                     "id": "490b649b-4ee5-4515-9834-5eac24c32658",
                     "path": "<Keyboard>/w",
                     "interactions": "",
@@ -39,7 +48,7 @@
                     "isPartOfComposite": true
                 },
                 {
-                    "name": "down",
+                    "name": "Down",
                     "id": "81ee84b9-fd3f-474c-a4ed-6c1ba6a3c21f",
                     "path": "<Keyboard>/s",
                     "interactions": "",
@@ -50,7 +59,7 @@
                     "isPartOfComposite": true
                 },
                 {
-                    "name": "left",
+                    "name": "Left",
                     "id": "82c4742b-0225-4f1f-a92e-c9f638862882",
                     "path": "<Keyboard>/a",
                     "interactions": "",
@@ -61,7 +70,7 @@
                     "isPartOfComposite": true
                 },
                 {
-                    "name": "right",
+                    "name": "Right",
                     "id": "57a864f3-6ca3-4c77-a3de-4f7672a87a14",
                     "path": "<Keyboard>/d",
                     "interactions": "",
@@ -72,26 +81,15 @@
                     "isPartOfComposite": true
                 },
                 {
-                    "name": "forward",
-                    "id": "82ae7037-b99a-4831-8fdb-44903919ef59",
+                    "name": "",
+                    "id": "36907b75-6ac5-46b8-a5f8-9e6406eb621b",
                     "path": "",
                     "interactions": "",
                     "processors": "",
                     "groups": "",
-                    "action": "Move",
+                    "action": "Dash",
                     "isComposite": false,
-                    "isPartOfComposite": true
-                },
-                {
-                    "name": "backward",
-                    "id": "3f9d6435-40af-4db2-87a9-62a6ed04f65f",
-                    "path": "",
-                    "interactions": "",
-                    "processors": "",
-                    "groups": "",
-                    "action": "Move",
-                    "isComposite": false,
-                    "isPartOfComposite": true
+                    "isPartOfComposite": false
                 }
             ]
         }
